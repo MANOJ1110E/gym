@@ -36,7 +36,7 @@ margin-bottom: 15px;
 border: 1px solid #ccc;
 border-radius: 4px;
 }
-.register-box button {
+.register-box form .reg {
 width: 100%;
 padding: 10px;
 background-color: #007BFF;
@@ -49,13 +49,19 @@ font-size: 16px;
 .register-box button:hover {
 background-color: #0056b3;
 }
-.reg a{
+.reg{
     text-decoration: none;
-    color: #fff;
+    color: black;
+    background-color: #007BFF;
 }
 .log a{
     text-decoration: none;
     color: #fff; 
+}
+.but {
+    display: flex;
+    gap:5px;
+    text-align: center;
 }
 </style>
 </head>
@@ -82,8 +88,10 @@ background-color: #0056b3;
 <input type="password"  id="password" name="password" required>
 
 
-<button type="submit" class="reg"><a  href="webpage01.html">Register</a></button> <br><br>
-<button type="login" class="log"><a href="loginwebpage01.html">Login</a></button>
+<div class="but">
+    <a class="reg" href="webpage01.html">Register</a> <br><br>
+<a class="reg" href="loginwebpage01.html">Login</a>
+</div>
 </form>
 </div>
     
